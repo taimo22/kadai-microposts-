@@ -19,6 +19,7 @@ class MicropostsController < ApplicationController
     redirect_back(fallback_location: root_path)
   end
 
+
   private
 
   def micropost_params
@@ -31,4 +32,5 @@ class MicropostsController < ApplicationController
       redirect_to root_url
     end
   end
-end
+
+  end
