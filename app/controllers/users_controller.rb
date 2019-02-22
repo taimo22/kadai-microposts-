@@ -40,7 +40,7 @@ class UsersController < ApplicationController
 
   def likes
     @user = User.find(params[:id])
-    @favorites = RelationFavor.where("user_id = ?", @user)
+    @favorites = @user.microposts2
   end
 
 
