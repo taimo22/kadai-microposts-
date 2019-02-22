@@ -14,7 +14,7 @@ class User < ApplicationRecord
   has_many :followers, through: :reverses_of_relationship, source: :user
 
   has_many :relation_favors
-  has_many :microposts, through: :relation_favors, source: :micropost
+  has_many :microposts2, through: :relation_favors, source: :micropost
 
 
 
